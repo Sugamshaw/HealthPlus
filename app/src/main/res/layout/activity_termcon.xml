@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abovelayer"
+    tools:context=".termcon">
+
+    <TextView
+        android:layout_width="354dp"
+        android:layout_height="165dp"
+        android:gravity="center"
+        android:text="TERMS AND CONDITION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/dark_dark_blue"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:layout_width="371dp"
+        android:layout_height="307dp"
+        android:gravity="center"
+        android:text="This Agreement defines the terms and conditions under which you are allowed to use the app and describes the manner in which we shall treat your account while you are registered as a member with us. If you have any questions about any part of the Agreement, feel free to contact us at Health+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/dark_dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

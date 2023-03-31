@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abovelayer"
+    tools:context=".uploadactivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="383dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_edittext"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="124dp"
+                tools:layout_conversion_absoluteWidth="308dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Tap to upload"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+            <EditText
+                android:id="@+id/uploadTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start|center_vertical"
+                android:hint="Prescription's description"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/dark_blue" />
+
+            <EditText
+                android:id="@+id/uploadDesc"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start|center_vertical"
+                android:hint="Doctor's name"
+                android:padding="16dp"
+                android:textColor="@color/dark_blue" />
+
+            <EditText
+                android:id="@+id/uploadPriority"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start|center_vertical"
+                android:hint="Date"
+                android:padding="16dp"
+                android:textColor="@color/dark_blue" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/round_button"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/uploadPriority"
+                tools:layout_conversion_absoluteHeight="60dp"
+                tools:layout_conversion_absoluteWidth="308dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
